@@ -1,18 +1,15 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { CommonModule } from '@angular/common';
+import { ProdAddEditComponent } from './prod-add-edit/prod-add-edit.component';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    ProdAddEditComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    CommonModule,
+    MaterialModule
+  ]
 })
 export class AppModule { }
